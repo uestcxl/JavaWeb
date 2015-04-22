@@ -18,7 +18,6 @@ public class SayHello extends javax.servlet.http.HttpServlet {
             throws javax.servlet.ServletException, IOException {
 
         this.log("Get 执行");
-
         this.execute(request, response);
     }
 

@@ -25,4 +25,23 @@
         <url-pattern>/identify</url-pattern>
         <url-pattern>/identify.jsp</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>InitParamsServlet</servlet-name>
+        <servlet-class>InitParamsServlet</servlet-class>
+        <init-param>
+            <param-name>xl</param-name>
+            <param-value>xulei</param-value>
+        </init-param>
+        <init-param>
+            <param-name>admin</param-name>
+            <param-value>admin</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InitParamsServlet</servlet-name>
+        <url-pattern>/initparams</url-pattern>
+        <url-pattern>/initparams.jsp</url-pattern>
+    </servlet-mapping>
 </web-app>

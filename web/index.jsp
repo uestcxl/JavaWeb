@@ -43,6 +43,11 @@
         <h3>Get与post请求</h3>
         <p><a href="sayhello">点我查看</a></p>
       </div>
+
+      <div class="web-xml">
+        <h3>获取web.xml中的参数</h3>
+        <p><a href="initparams">获取initparams中得内容</a></p>
+      </div>
     </div>
 
     <div class="footer">
