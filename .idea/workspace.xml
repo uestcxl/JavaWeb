@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5cfa8d-c4ec-497b-8b33-c1fbe9e57f7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.jsp" />
+    <list default="true" id="ff5cfa8d-c4ec-497b-8b33-c1fbe9e57f7d" name="Default" comment="初始化">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -660,12 +660,12 @@
       <created>1429598173795</created>
       <option name="number" value="Default" />
       <updated>1429598173795</updated>
-      <workItem from="1429598176774" duration="20982000" />
+      <workItem from="1429598176774" duration="21126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20982000" />
+    <option name="totallyTimeSpent" value="21126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
