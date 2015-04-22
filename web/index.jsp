@@ -38,16 +38,21 @@
         <img src="identify" alt="identify" id="identify" onload="btn.disabled=false;"/>
         <button id="btn" type="button" value="换个图片" onclick="change()">点我换图</button>
       </div>
+      <hr/>
 
       <div class="request">
         <h3>Get与post请求</h3>
         <p><a href="sayhello">点我查看</a></p>
       </div>
+      <hr/>
 
       <div class="web-xml">
         <h3>获取web.xml中的参数</h3>
         <p><a href="initparams">获取initparams中得内容</a></p>
+        <p><a href="contentParams">获取content中得内容</a></p>
       </div>
+      <hr/>
+
     </div>
 
     <div class="footer">

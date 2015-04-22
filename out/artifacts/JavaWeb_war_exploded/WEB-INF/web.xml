@@ -3,6 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <context-param>
+        <param-name>uploadFolder</param-name>
+        <param-value>attachment</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>FileType</param-name>
+        <param-value>.jpg , .png , .bmp</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>ContentParams</servlet-name>
+        <servlet-class>ContentParamsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ContentParams</servlet-name>
+        <url-pattern>/contentParams</url-pattern>
+    </servlet-mapping>
+    
     <servlet>
         <servlet-name>SayHello</servlet-name>
         <servlet-class>SayHello</servlet-class>
