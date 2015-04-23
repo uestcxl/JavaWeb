@@ -1,3 +1,4 @@
+import javax.annotation.Resource;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,14 +12,19 @@ import java.io.PrintWriter;
  */
 @WebServlet(name = "ContentParamsServlet")
 public class ContentParamsServlet extends HttpServlet {
+    @Resource(name = "hello")
+    private String hello;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         response.setContentType("utf-8");
         PrintWriter printWriter = response.getWriter();
 
         printWriter.println(this.getServletConfig().getServletContext().getInitParameter("FileType"));
+
+        printWriter.println(hello);
     }
 }

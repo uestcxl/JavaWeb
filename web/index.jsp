@@ -50,6 +50,7 @@
         <h3>获取web.xml中的参数</h3>
         <p><a href="initparams">获取initparams中得内容</a></p>
         <p><a href="contentParams">获取content中得内容</a></p>
+        <p><a href="contentParams">通过@Resource获取env-entry中的参数</a></p>
       </div>
       <hr/>
 
