@@ -64,4 +64,11 @@
         <url-pattern>/initparams</url-pattern>
         <url-pattern>/initparams.jsp</url-pattern>
     </servlet-mapping>
+    
+    
+    <env-entry>
+        <env-entry-name>hello</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>This is a @Resource input</env-entry-value>
+    </env-entry>
 </web-app>
