@@ -1,3 +1,7 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.beans.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
 <%--
   Created by IntelliJ IDEA.
   User: xl
@@ -60,5 +64,18 @@
       <%--<p>copyright©xl</p>--%>
     </div>
 
+    <%
+      Class.forName("com.mysql.jdbc.Driver");
+      java.sql.Connection connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/awesome", "xl", "xulei123");
+      java.sql.Statement statement = connection.createStatement();
+      java.sql.ResultSet resultSet = statement.executeQuery("select * from user");
+      while (resultSet.next()){
+        %>
+      <h1><%=resultSet.getString(1)%></h1>
+      <h1><%=resultSet.getString(2)%></h1>
+      <h1><%=resultSet.getString(3)%></h1>
+    <%
+      }
+    %>
   </body>
 </html>
